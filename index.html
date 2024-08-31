@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energiedaten Visualisierung</title>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3-geo.v3.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <button id="showContentButton">Visualisierung anzeigen</button>
+        <div id="contentContainer" style="display: none;">
+            <div class="container">
+                <div id="worldMap"></div>
+                <div id="barChart"></div>
+                <div id="donutChart"></div>
+                <div id="scatterPlot"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./src/worldMap.js"></script>
+    <script src="./src/barChart.js"></script>
+    <script src="./src/donutChart.js"></script>
+    <script src="./src/scatterPlot.js"></script>
+    <script src="./src/script.js"></script>
+</body>
+</html>
